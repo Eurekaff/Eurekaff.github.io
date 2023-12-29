@@ -181,11 +181,21 @@ nav .tainer{
     font-size: 1.3rem;
     margin: 12 auto;
     text-align: center;
+    padding: 8px 12px;
+    border-radius: 20px;
 }
 
 .tainer li a{
     color:#DEF2F1;
     margin-right: 15px;
+}
+
+.tainer li:hover{
+  background-color: #DEF2F1;
+}
+
+.tainer li:hover a{
+  color: #17252a;
 }
 
 .about{
