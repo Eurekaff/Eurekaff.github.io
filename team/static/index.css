@@ -182,6 +182,11 @@
   .footer a{
     position: absolute;
     width: 8%;
+    transition: all 0.2s;
+  }
+
+  .footer a:hover{
+    width: 10%;
   }
 
   .footer a img{
