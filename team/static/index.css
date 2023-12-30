@@ -95,6 +95,13 @@
     background-color: #5A3A29;
   }
 
+  .header p{
+    font-size: 6rem;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+  }
+
   .header ul img{
     width: 90%;
   }
