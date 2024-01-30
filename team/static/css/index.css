@@ -1,0 +1,353 @@
+/*index.css*/
+/* 清除浏览器默认格式 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式 */
+    box-sizing: border-box;
+    font-family: MyFont,Lora,Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* 清除浮动 */
+  .clearfix::before,
+  .clearfix::after {
+    content: '';
+    display: table;
+  }
+
+  .clearfix::after {
+    clear: both;
+  }
+  
+  body{
+    background-color: #FFDEAD;
+  }
+
+  .header{
+    position: relative;
+  }
+
+  .head{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .header ul {
+    position: absolute;
+    z-index: 2;
+    right: 0%;
+    width: 51%;
+  }
+
+  .header li{
+    display: inline-block;
+    margin-left: 2.5%;
+    width: 13%;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+  }
+
+  .header li:hover{
+    background-color: #5A3A29;
+  }
+
+  .header p{
+    font-size: 6rem;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+
+  }
+
+  .header ul img{
+    width: 90%;
+  }
+
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 3;
+  }
+  #scrollToTopBtn img {
+  height: 15rem;
+  }
+
+  .banner{
+    position: relative;
+    top:10%;
+    width: 100%;
+    height: 100vh;
+    background: url(../image/title.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .title{
+    width: 100%;
+  }
+
+  .content{
+    position: relative;
+    border-top: 3rem groove #000;
+    
+  }
+
+  .content p{
+    font-size: 10rem;
+    line-height: 15rem;
+  }
+
+  .ball img{
+    width: 100%;
+  }
+
+  .word1{
+    position: absolute;
+    width: 50%;
+    left: 10%;
+    top: 3%;
+  }
+
+  .word2{
+    position: absolute;
+    width: 70%;
+    left: 30%;
+    top: 32%;
+  }
+
+  .tube{
+    position: relative;
+  }
+
+  .tube1{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .dirt{
+    position: absolute;
+    width: 60%;
+    z-index: 3;
+    top: -10%;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .dirt:hover{
+    opacity: 1;
+  }
+
+  .dirt img{
+    width: 100%;
+  }
+
+  @keyframes Auanimation{
+    0%{
+      left: 22%;
+      top: 6%;
+    }
+    50%{
+      left: 83%;
+      top: 6%;
+    }
+    75%{
+      left: 83%;
+      top: 23%;
+    }
+    100%{
+      left: 70%;
+      top: 23%;
+    }
+  }
+
+  .Au{
+    position: absolute;
+    z-index: 2;
+    left: 22%;
+    top: 6%;
+    animation: Auanimation 10s ease-in infinite;
+  }
+
+  .Au img{
+    width: 40rem;
+  }
+
+  .Ag img{
+    width: 40rem;
+  }
+
+  .Agg img{
+    width: 40rem;
+  }
+
+  .Auu img{
+    width: 40rem;
+  }
+
+  .CN img{
+    width: 40rem;
+  }
+
+  @keyframes Aganimation{
+    0%{
+      left: 33%;
+      top: 7%;
+    }
+    50%{
+      left: 85%;
+      top: 7%;
+    }
+    75%{
+      left: 85%;
+      top: 25%;
+    }
+    100%{
+      left: 68%;
+      top: 25%;
+    }
+  }
+
+  .Ag{
+    position: absolute;
+    z-index: 2;
+    left: 33%;
+    top: 7%;
+    animation: Aganimation 8s ease-in-out infinite;
+  }
+
+  @keyframes CNanimation{
+    0%{
+      left: 14%;
+      top: 33%;
+    }
+    10%{
+      left: 3%;
+      top: 33%;
+    }
+    40%{
+      left: 3%;
+      top: 55%;
+    }
+    100%{
+      left: 43%;
+      top: 55%;
+    }
+  }
+
+  .CN{
+    position: absolute;
+    left: 14%;
+    top: 33%;
+    z-index: 2;
+    animation: CNanimation 7s ease-in-out infinite;
+  }
+
+  .Agg{
+    position: absolute;
+    z-index: 2;
+    animation: CNanimation 8s ease-in infinite;
+  }
+
+  .Auu{
+    position: absolute;
+    z-index: 2;
+    animation: CNanimation 6s linear infinite;
+  }
+
+  .word3{
+    position: absolute;
+    left: 3%;
+    top: 92%;
+    width: 80%;
+  }
+
+  .footer{
+    position: relative;
+  }
+
+  .foot{
+    width: 100%;
+  }
+
+  .location{
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    height: 10%;
+    font-size: 6rem;
+    line-height: 1.5;
+    color: #fff;
+  }
+
+  .contact{
+    position: absolute;
+    top: 53%;
+    right: 4%;
+    transform: skew(-4deg, 10deg);
+    font-size: 7rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #5A3A29;
+  }
+
+  .p1{
+    font-size: 7rem;
+    font-weight: bolder;
+  }
+
+  .footer a{
+    position: absolute;
+    width: 8%;
+    transition: all 0.2s;
+  }
+
+  .footer a:hover{
+    width: 10%;
+  }
+
+
+
+  .footer a img{
+    width: 100%;
+  }
+
+  .ins{
+    top: 78%;
+    left: 80%;
+  }
+
+  .wechat{
+    top: 66%;
+    left: 65%;
+  }
+
+  .weibo {
+    top: 65%;
+    left: 74%;
+  }
+
+  .twitter{
+    top: 80%;
+    left: 62%;
+  }
+
+  .facebook{
+    top: 80%;
+    left: 71%;
+  }
+
+

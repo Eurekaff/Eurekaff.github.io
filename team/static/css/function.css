@@ -1,0 +1,207 @@
+/* function.css */
+/* 清除浏览器默认格式 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式 */
+    box-sizing: border-box;
+    font-family: MyFont,Lora,Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* 清除浮动 */
+  .clearfix::before,
+  .clearfix::after {
+    content: '';
+    display: table;
+  }
+
+  .clearfix::after {
+    clear: both;
+  }
+
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 3;
+  }
+  #scrollToTopBtn img {
+  height: 15rem;
+  }
+
+  .header{
+    position: relative;
+    z-index: 5;
+  }
+
+  .head{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .header ul {
+    position: absolute;
+    z-index: 2;
+    right: 0%;
+    width: 51%;
+  }
+
+  .header li{
+    display: inline-block;
+    margin-left: 2.5%;
+    width: 13%;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+  }
+
+  .header li:hover{
+    background-color: #5A3A29;
+  }
+
+  .header p{
+    font-size: 6rem;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+
+  }
+
+  .header ul img{
+    width: 90%;
+  }
+
+  body::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: #F44336;
+    transform-origin: 0 50%;
+    animation: grow-progress 1s linear;
+    animation-timeline: scroll();
+}
+main{
+    padding: 10px;
+}
+.main div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 10px;
+    background-color: beige;
+    color: coral;
+    font-size: 20rem;
+    animation: appear 1s linear both;
+    view-timeline: --subjectReveal block;
+    animation-timeline: --subjectReveal;
+    view-timeline-inset: 25% -100px;
+    /* animation-range: 10px 90px; */
+}
+.main div:nth-child(odd){
+    background-color:wheat
+}
+@keyframes grow-progress {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+  .footer{
+    position: relative;
+    background-color: #FFDEAD;
+  }
+
+  .foot{
+    width: 100%;
+  }
+
+  .location{
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    height: 10%;
+    font-size: 6rem;
+    line-height: 1.5;
+    color: #fff;
+  }
+
+  .contact{
+    position: absolute;
+    top: 53%;
+    right: 4%;
+    transform: skew(-4deg, 10deg);
+    font-size: 7rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #5A3A29;
+  }
+
+  .p1{
+    font-size: 7rem;
+    font-weight: bolder;
+  }
+
+  .footer a{
+    position: absolute;
+    width: 8%;
+    transition: all 0.2s;
+  }
+
+  .footer a:hover{
+    width: 10%;
+  }
+
+
+
+  .footer a img{
+    width: 100%;
+  }
+
+  .ins{
+    top: 78%;
+    left: 80%;
+  }
+
+  .wechat{
+    top: 66%;
+    left: 65%;
+  }
+
+  .weibo {
+    top: 65%;
+    left: 74%;
+  }
+
+  .twitter{
+    top: 80%;
+    left: 62%;
+  }
+
+  .facebook{
+    top: 80%;
+    left: 71%;
+  }
